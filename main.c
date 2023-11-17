@@ -4,6 +4,7 @@
 float sub_fun (float in1 , float in2);
 float divide(float,float);
 float add (float x,float y);
+float mul(float num1,float num2);
 
 int main()
 {
@@ -19,6 +20,14 @@ int main()
 
 	return 0;
 }
+
+
+
+
+
+
+
+
 
 
 float divide(float x, float y)
@@ -44,3 +53,15 @@ float add (float x,float y){
 	sum= x+y;
 	return sum;
 }
+  
+  
+float mul(float num1,float num2){
+    float mulResult;
+printf("enter number 1:");
+    scanf("%f",&num1);
+    printf("enter number 2:");
+    scanf("%f",&num2);
+    mulResult=num1*num2;
+    printf("result=%f\n",mulResult);
+    return mulResult;
+} 
