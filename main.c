@@ -1,12 +1,23 @@
 // this is the main code
-float sub_fun (float in1 , float in2);
 #include <stdio.h>
 
+float sub_fun (float in1 , float in2);
 float divide(float,float);
+float add (float x,float y);
 
 int main()
 {
-    return 0;
+  float a;
+	float b;
+	float result;
+
+	printf("Please enter 2 numbers:\n");
+	scanf("%f %f",&a,&b);
+
+	result = add(a,b);
+	printf("Result of sum = %f", result);
+
+	return 0;
 }
 
 
@@ -28,3 +39,8 @@ float sub_fun (float in1 , float in2)
 	return (in1-in2);
 }
 
+float add (float x,float y){
+	float sum;
+	sum= x+y;
+	return sum;
+}
